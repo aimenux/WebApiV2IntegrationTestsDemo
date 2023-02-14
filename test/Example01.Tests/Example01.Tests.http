@@ -1,0 +1,7 @@
+###
+
+GET https://localhost:44348/api/products
+
+###
+
+GET https://localhost:44348/api/products/1
