@@ -1,3 +1,5 @@
+[![CI](https://github.com/aimenux/WebApiV2IntegrationTestsDemo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aimenux/WebApiV2IntegrationTestsDemo/actions/workflows/ci.yml)
+
 # WebApiV2IntegrationTestsDemo
 ```
 Using integration tests with web api v2 projects
