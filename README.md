@@ -13,7 +13,7 @@ Using integration tests with web api v2 projects
 >
 > :four: `Example04` use controller(s) and service(s) with [autofac dependency injection](https://autofac.org/)
 >
-> :bulb: Integration tests are based on the [in-memory HttpServer](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh834055(v=vs.108)
+> :bulb: Integration tests are based on the [in-memory HttpServer](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh834055(v=vs.108))
 >
 
 **`Tools`** : vs22, net 4.8, web api v2, unity, ninject, autofac, integration-testing
