@@ -25,5 +25,11 @@ jobs:
       - name: Build DotNET
         run: |
          MSBuild.exe WebApiV2IntegrationTestsDemo.sln /p:platform="Any CPU" /p:configuration="Release"
-      - name: Run Tests
-        run: vstest.console.exe test\Example01.Tests\bin\Release\Example01.Tests.dll, test\Example02.Tests\bin\Release\Example02.Tests.dll, test\Example03.Tests\bin\Release\Example03.Tests.dll, test\Example04.Tests\bin\Release\Example04.Tests.dll
+      - name: Run Tests Example01
+        run: vstest.console.exe test\Example01.Tests\bin\Release\Example01.Tests.dll
+      - name: Run Tests Example02
+        run: vstest.console.exe test\Example02.Tests\bin\Release\Example02.Tests.dll
+      - name: Run Tests Example03
+        run: vstest.console.exe test\Example03.Tests\bin\Release\Example03.Tests.dll
+      - name: Run Tests Example04
+        run: vstest.console.exe test\Example04.Tests\bin\Release\Example04.Tests.dll
