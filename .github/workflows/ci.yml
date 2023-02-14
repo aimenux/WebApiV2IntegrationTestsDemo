@@ -1,0 +1,33 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: .NET
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+      
+jobs:
+  build:
+    runs-on: [windows-latest]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1    
+      - name: Setup MSBuild
+        uses: microsoft/setup-msbuild@v1
+      - name: Setup NuGet
+        uses: nuget/setup-nuget@v1
+      - name: Restore Packages
+        run: nuget restore WebApiV2IntegrationTestsDemo.sln
+      - name: Navigate to Workspace
+        run: cd $GITHUB_WORKSPACE        
+      - name: Build DotNET
+        run: |
+         MSBuild.exe WebApiV2IntegrationTestsDemo.sln
+      - name: Run Tests
+        uses: microsoft-approved-actions/vstest@master
+        with:
+          testAssembly: Example*.Tests.dll
+          searchFolder: ./test/      
