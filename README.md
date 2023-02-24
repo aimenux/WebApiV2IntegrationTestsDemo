@@ -15,7 +15,13 @@ Using integration tests with web api v2 projects
 >
 > :four: `Example04` use controller(s) and service(s) with [autofac dependency injection](https://autofac.org/)
 >
-> :bulb: Integration tests are based on the [in-memory HttpServer](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh834055(v=vs.108))
+> :five: `Example05` use controller(s) with owin
+>
+> :six: `Example06` use controller(s) with owin self hosting
+>
+> :bulb: Integration tests are based on [in-memory HttpServer](https://learn.microsoft.com/en-us/previous-versions/aspnet/hh834055(v=vs.108)) for examples 1 to 4.
+>
+> :bulb: Integration tests are based on [owin](https://learn.microsoft.com/en-us/aspnet/web-api/overview/hosting-aspnet-web-api/use-owin-to-self-host-web-api) for examples 5 to 6.
 >
 
-**`Tools`** : vs22, net 4.8, web api v2, unity, ninject, autofac, integration-testing
+**`Tools`** : vs22, net 4.8, web api v2, owin, unity, ninject, autofac, integration-testing

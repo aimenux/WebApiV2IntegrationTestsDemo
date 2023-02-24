@@ -1,22 +1,22 @@
 ﻿using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Example04.Models;
+using Example05.Models;
 using FluentAssertions;
 using Xunit;
 
-namespace Example04.Tests
+namespace Example05.Tests
 {
-    [Collection(HttpServerCollection.Name)]
+    [Collection(TestServerCollection.Name)]
     public class ProductsControllerTests
     {
-        private readonly HttpServerFixture _httpServerFixture;
+        private readonly TestServerFixture _httpServerFixture;
 
-        public ProductsControllerTests(HttpServerFixture httpServerFixture)
+        public ProductsControllerTests(TestServerFixture httpServerFixture)
         {
             _httpServerFixture = httpServerFixture;
         }
-        
+
         [Fact]
         public async Task Should_Get_Products()
         {
@@ -31,7 +31,7 @@ namespace Example04.Tests
                 }
             }
         }
-        
+
         [Theory]
         [InlineData(1)]
         [InlineData(2)]

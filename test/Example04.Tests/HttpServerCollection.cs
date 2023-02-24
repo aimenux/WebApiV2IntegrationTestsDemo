@@ -1,7 +1,6 @@
-using Example04.Tests;
 using Xunit;
 
-namespace WebApiOneTests
+namespace Example04.Tests
 {
     [CollectionDefinition(Name)]
     public sealed class HttpServerCollection : ICollectionFixture<HttpServerFixture>

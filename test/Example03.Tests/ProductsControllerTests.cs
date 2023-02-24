@@ -3,7 +3,6 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Example03.Models;
 using FluentAssertions;
-using WebApiOneTests;
 using Xunit;
 
 namespace Example03.Tests
