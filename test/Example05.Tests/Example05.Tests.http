@@ -1,7 +1,7 @@
 ###
 
-GET https://localhost:44312/api/products
+GET https://localhost:44356/api/products
 
 ###
 
-GET https://localhost:44312/api/products/1
+GET https://localhost:44356/api/products/1
